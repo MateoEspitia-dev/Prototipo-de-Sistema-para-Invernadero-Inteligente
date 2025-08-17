@@ -1,0 +1,161 @@
+.radar-chart-container {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+.white-box{
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+.sensor-data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectors {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 10px; /* Espacio entre los selectores */
+}
+
+.selectors select,
+.selectors input[type="date"] {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.select-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea verticalmente los elementos dentro de select-details */
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+.chart-container {
+  margin-top: 20px;
+}
+.dashboard-container{
+  padding-top: 60px;
+}
+.sensor-details {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en fila */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.sensor-item-inline {
+  display: flex;
+  gap: 10px; /* Espacio entre los spans */
+  font-size: 14px; /* Tamaño de letra similar a los selectores */
+}
+
+.sensor-item-inline span {
+  white-space: nowrap; /* Evita que el texto se envuelva */
+}
+.last-50-data-container {
+  width: 100%;
+  max-width: auto;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Asegura que el fondo sea blanco */
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.last-50-data-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.last-50-data-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.last-50-data-container th,
+.last-50-data-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.last-50-data-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.last-50-data-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.last-50-data-container tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos adicionales para la tabla en pantallas pequeñas */
+@media (max-width: 768px) {
+  .last-50-data-container table,
+  .last-50-data-container thead,
+  .last-50-data-container tbody,
+  .last-50-data-container th,
+  .last-50-data-container td,
+  .last-50-data-container tr {
+    display: block;
+  }
+
+  .last-50-data-container thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .last-50-data-container tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .last-50-data-container td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .last-50-data-container td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}

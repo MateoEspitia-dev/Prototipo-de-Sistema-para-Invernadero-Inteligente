@@ -1,0 +1,177 @@
+.dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  
+  .clima-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex; /* Garantiza que el contenido interno esté alineado */
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mapa-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    height: auto; /* Ajusta dinámicamente la altura al contenedor padre */
+    display: flex; /* Opcional: Si necesitas alinear el contenido interno */
+    flex-direction: column;
+  }
+
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .clima-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .clima-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .clima-icon img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .clima-info h2 {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .clima-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .clima-stats-horizontal {
+    display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+  }
+  
+  .clima-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    gap: 2px;
+  }
+  
+  .clima-stat p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .clima-stat svg {
+    margin-bottom: 5px;
+  }
+  
+.dashboard-container2 {
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos */
+    align-items: flex-start; /* Forzar a que los elementos hijos tengan la misma altura */
+  }
+
+.dashboard-container3 {
+  flex: 1; /* Clima ocupa más espacio */
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container4 {
+  flex: 3; /* Mapa ocupa menos espacio */
+  height: 100%; /* Ajusta altura automáticamente */
+  display: flex;
+  justify-content: center; /* Centra el mapa horizontalmente */
+  align-items: center; /* Centra el mapa verticalmente */
+  overflow: hidden; /* Evita que sobresalga contenido no deseado */
+}
+
+.dashboard-container4 iframe {
+  width: 100%; /* Mapa ocupa todo el ancho */
+  height: 250px; /* Ajusta la altura del mapa */
+  border: none; /* Elimina borde */
+}
+
+.forecast-container {
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forecast-grid {
+    display: flex;
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    gap: 10px; /* Reducir el espacio entre tarjetas */
+    flex-wrap: nowrap; /* Mantener tarjetas en una fila */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    padding: 10px;
+    height: auto;
+    flex-direction: row; /* Asegurar que las tarjetas estén en columna */
+    align-items: start; /* Centrar las tarjetas */
+}
+
+.forecast-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 120px; /* Reducir el tamaño de las tarjetas */
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+}
+
+.forecast-card h3 {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.forecast-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+.forecast-details > *:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea sutil */
+    padding-bottom: 5px; /* Espacio entre contenido y línea */
+}
+
+.forecast-item img {
+    width: 30px;
+    height: 30px; /* Reducir iconos */
+}
+
+.forecast-item p {
+    font-size: 12px; /* Reducir texto */
+    margin: 0;
+    color: #555;
+}
+
+  

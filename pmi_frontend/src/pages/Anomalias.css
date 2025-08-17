@@ -1,0 +1,40 @@
+.anomalias-container {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cuadrícula responsiva */
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido */
+}
+
+.grid-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    margin: 5px 0;
+}
+
+.grid-item p:first-of-type {
+    font-weight: bold;
+}
+
+.grid-item p:last-of-type {
+    color: #007bff;
+}
+
+.grid-item p:last-of-type.anomalia-true {
+    color: red;
+    font-weight: bold;
+}
