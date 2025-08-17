@@ -53,5 +53,4 @@ def limpiar_y_preparar_csv(ruta_entrada, ruta_salida):
     except Exception as e:
         print(f"Error en la limpieza de datos: {e}")
 
-# Ejecutar la función
 limpiar_y_preparar_csv(ruta_archivo_entrada, ruta_archivo_salida)
